@@ -1,0 +1,14 @@
+from enum import IntEnum
+
+class ProductInfo(IntEnum):
+    UNKNOWN = 0
+    FUNCTION_BLOCK_INFO = 0
+    BMAP_VERSION = 1
+    ALL_FUNCTION_BLOCKS = 2
+    PRODUCT_ID_VARIANT = 3
+    GET_ALL_FUNCTIONS = 4
+    FIRMWARE_VERSION = 5
+    MAC_ADDRESS = 6
+    SERIAL_NUMBER = 7
+    HARDWARE_REVISION = 10
+    COMPONENT_DEVICES = 11
