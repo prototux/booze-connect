@@ -19,6 +19,30 @@ class Settings(IntEnum):
     SIDETONE = 11 # "self voice"
     IMU_VOLUME_CONTROL = 21
 
+class VoicePromptLanguage(IntEnum):
+    UK_ENGLISH = 0 # English (U.K.)
+    US_ENGLISH = 1 # English (U.S.)
+    FRENCH = 2 # Français
+    ITALIAN = 3 # Italiano
+    GERMAN = 4 # Deutsch
+    EUROPEAN_SPANISH = 5 # Español (E.U.)
+    MEXICAN_SPANISH = 6 # Español (M.X.)
+    BRAZILIAN_PORTUGUESE = 7 # Português
+    MANDARIN_CHINESE = 8 # 普通话 (Mandarin)
+    KOREAN = 9 # 한국어 (Korean)
+    RUSSIAN = 10 # Русский (Russian)
+    POLISH = 11 # Polski
+    HEBREW = 12 # עִברִית (Hebrew)
+    TURKISH = 13 # Türk
+    DUTCH = 14 # Nederlands
+    JAPANESE = 15 # 日本語 (Japanese)
+    CANTONESE = 16 # 廣東話 (Cantonese)
+    ARABIC = 17 # العربية (Arabic)
+    SWEDISH = 18 # Svensk
+    DANISH = 19 # Dansk
+    NORWEGIAN = 20 # Norsk
+    FINNISH = 21 # Suomen kieli (Finnish)
+
 class ANRSettings:
     class ANRMode(IntEnum):
         OFF = 0

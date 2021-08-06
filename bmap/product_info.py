@@ -12,3 +12,8 @@ class ProductInfo(IntEnum):
     SERIAL_NUMBER = 7
     HARDWARE_REVISION = 10
     COMPONENT_DEVICES = 11
+
+class ProductType(IntEnum):
+    UNKNOWN = -1
+    HEADPHONES = 0
+    SPEAKER = 1
