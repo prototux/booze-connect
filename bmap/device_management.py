@@ -52,3 +52,11 @@ class SomethingEnum(IntEnum):
 class ConnectionStatusEnum(IntEnum):
     DOWN = 0
     UP = 1
+
+class P2PConnectionType(IntEnum):
+    NONE = 0
+    MUSIC_STEREO = 1
+    MUSIC_MONO_LEFT = 2
+    MUSIC_MONO_RIGHT = 3
+    VOICE_SAME_TYPE = 4
+    VOICE_DIFFERENT_TYPE = 5

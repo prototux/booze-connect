@@ -43,6 +43,12 @@ class VoicePromptLanguage(IntEnum):
     NORWEGIAN = 20 # Norsk
     FINNISH = 21 # Suomen kieli (Finnish)
 
+class SidetoneMode(IntEnum):
+    OFF = 0
+    HIGH = 1
+    MEDIUM = 2
+    LOW = 3
+
 class ANRSettings:
     class ANRMode(IntEnum):
         OFF = 0

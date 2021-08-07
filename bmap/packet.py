@@ -32,6 +32,26 @@ class Operator(IntEnum):
     RESULT = 6
     PROCESSING = 7
 
+class DisconnectReasonCode(IntEnum):
+    UNKNOWN = 0
+    USER_TRIGGERED_POWER_OFF = 1
+    AUTO_OFF = 2
+    BATTERY = 3
+    RESTART = 4
+    SAFETY = 5
+    OVER_THE_AIR_UPDATE = 6
+    CHARGING = 7
+    OUT_OF_RANGE = 16
+    INSUFFICIENT_CONNECTION_SLOTS = 32
+    APP_TRIGGERED_DISCONNECT = 33
+
+class SupportedBluetoothProfiles(IntEnum):
+    A2DP = 1
+    DEFAULT = 1
+    HEARTRATE = 4
+    MAX_PROFILES = 3
+    SPP = 0
+
 class BmapPacket:
     def __init__(self, functionBlock, function, operator, data=b'', device_id=0, port=0):
         self.functionBlock = functionBlock

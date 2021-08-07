@@ -23,3 +23,8 @@ class HearingAssistance(IntEnum):
     ALGORITHM_CONTROL = 18
     LIVE_METRICS = 19
     DOFF_AUTO_OFF_TIME = 20
+
+class DirectionalityDescriptionType(IntEnum):
+    ENGLISH = 0
+    DEVICE = 1
+    ID = 2

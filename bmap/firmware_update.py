@@ -26,3 +26,16 @@ class FirmwareUpdate(IntEnum):
 
     # Start
     RESET = 7
+
+class FirmwareUpdateState(IntEnum):
+    ERROR = 0
+    IDLE = 1
+    READY_FOR_DATA_TRANSFER = 2
+    READY_FOR_VALIDATE = 3
+    READY_FOR_RUN_UPDATE = 4
+    UPDATE_COMPLETE = 5
+
+class LocationUpdateType(IntEnum):
+    MASTER_ONLY = 0
+    PUPPET_ONLY = 1
+    BOTH = 2
